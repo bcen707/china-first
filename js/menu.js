@@ -4,8 +4,8 @@ var menuItems = [
 		item: 'Fried Chicken Wings (10 pcs.)',
 		price: 10.95,
 		category: 'Appetizer',
-		recommended: 'no'
-		spicy: 'no',
+		recommended: 'no',
+		spicy: 'no'
 
 	}
 	{
@@ -16,27 +16,57 @@ var menuItems = [
 		spicy: 'no'
 	}	
 	{
-		item:
-		price:
-		category:
-		recommended:
-		spicy: 
+		item: 'Honey Walnut Prawns',
+		price: 13.95,
+		category: 'House Specials',
+		recommended:'yes',
+		spicy: 'no'
 	}
 	{
-		item:
-		price:
-		category:
-		recommended:
-		spicy: 
+		item: 'Kung Pao Three Delight',
+		price: 12.95,
+		category: 'House Specials',
+		recommended: 'no',
+		spicy: 'yes'
 	}
 	{
-		item:
-		price:
-		category:
-		recommended:
-		spicy: 
+		item: 'Shanghai Won Ton Soup',
+		price: 7.95,
+		category: 'Soup',
+		recommended: 'no',
+		spicy: 'no'
 	}
-
+	{
+		item: '',
+		price:
+		category: '',
+		recommended: '',
+		spicy: ''
+	}
+	{	item: '',
+		price:
+		category: '',
+		recommended: '',
+		spicy: ''
+	}
+	{	item: '',
+		price:
+		category: '',
+		recommended: '',
+		spicy: ''
+	}
+	{	item: '',
+		price:
+		category: '',
+		recommended: '',
+		spicy: ''
+	}
+	{	item: '',
+		price:
+		category: '',
+		recommended: '',
+		spicy: ''
+	}
 
 
 
