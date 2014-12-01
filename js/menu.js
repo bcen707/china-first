@@ -100,73 +100,59 @@ var menuItems = [
 		spicy: 'no'
 	}
 	{	
-		item: '',
-		price: ,
+		item: 'Assorted Chinese Vegetables',
+		price: 8.95,
 		category: 'Veggie and Tofu',
-		recommended: '',
-		spicy: ''
+		recommended: 'no',
+		spicy: 'no'
 	}
 	{	
-		item: '',
-		price: ,
+		item: 'Eggplant with Garlic Sauce',
+		price: 8.95,
 		category: 'Veggie and Tofu',
-		recommended: '',
-		spicy: ''
+		recommended: 'no',
+		spicy: 'yes'
 	}
 	{	
-		item: '',
-		price: ,
-		category: '',
-		recommended: '',
-		spicy: ''
+		item: 'China First Fried Rice',
+		price: 10.95,
+		category: 'Fried Rice',
+		recommended: 'no',
+		spicy: 'no'
 	}
 	{	
-		item: '',
-		price: ,
-		category: '',
-		recommended: '',
-		spicy: ''
+		item: 'Imperial Fried Rice',
+		price: 9.95,
+		category: 'Fried Rice',
+		recommended: 'no',
+		spicy: 'no'
 	}
 	{	
-		item: '',
-		price: ,
-		category: '',
-		recommended: '',
-		spicy: ''
+		item: 'Pan Fried Chow Ho Fun',
+		price: 9.95,
+		category: 'Chow Mein',
+		recommended: 'no',
+		spicy: 'no'
 	}
 	{	
-		item: '',
-		price: ,
-		category: '',
-		recommended: '',
-		spicy: ''
+		item: 'Soy Bean Hot Sauce Pork Noodle',
+		price: 7.95,
+		category: 'Chow Mein',
+		recommended: 'no',
+		spicy: 'yes'
 	}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+	{	
+		item: 'Roast Pork Egg Foo Young',
+		price: 9.99,
+		category: 'Egg Foo Young',
+		recommended: 'no',
+		spicy: 'no'
+	}
+	{	
+		item: 'Shrimp Egg Foo Young',
+		price: 10.99,
+		category: 'Egg Foo Young',
+		recommended: 'no',
+		spicy: 'no'
+	}
 ]
