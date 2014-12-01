@@ -37,31 +37,42 @@ var menuItems = [
 		spicy: 'no'
 	}
 	{
+		item: 'Hot and Sour Soup',
+		price: 7.95,
+		category: 'Soup',
+		recommended: 'no',
+		spicy: 'yes'
+	}
+	{	
 		item: '',
 		price:
 		category: '',
 		recommended: '',
 		spicy: ''
 	}
-	{	item: '',
+	{	
+		item: '',
 		price:
 		category: '',
 		recommended: '',
 		spicy: ''
 	}
-	{	item: '',
+	{	
+		item: '',
 		price:
 		category: '',
 		recommended: '',
 		spicy: ''
 	}
-	{	item: '',
+	{	
+		item: '',
 		price:
 		category: '',
 		recommended: '',
 		spicy: ''
 	}
-	{	item: '',
+	{	
+		tem: '',
 		price:
 		category: '',
 		recommended: '',
