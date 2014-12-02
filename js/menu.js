@@ -156,5 +156,5 @@ var menuItems = [
 		category: 'Egg Foo Young',
 		recommended: 'no',
 		spicy: 'no'
-	},
-]
+	}
+];
