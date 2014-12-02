@@ -2,3 +2,7 @@ a:link,a:visited {
 	color: #0000EE;
 
 }
+
+#mapArea {
+	height: 300px;
+}
