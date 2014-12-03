@@ -4,7 +4,7 @@ var menuItems = [
 
 	{
 		name: 'Fried Chicken Wings (10 pcs.)',
-		price: 10.95,
+		price: '$10.95',
 		category: 'Appetizer',
 		recommended: 'no',
 		spicy: 'no',
@@ -13,7 +13,7 @@ var menuItems = [
 	},
 	{
 		name: 'Egg Rolls (3 pcs.)',
-		price: 4.95,
+		price: '$4.95',
 		category: 'Appetizer',
 		recommended: 'yes',
 		spicy: 'no',
@@ -21,7 +21,7 @@ var menuItems = [
 	},	
 	{
 		name: 'Honey Walnut Prawns',
-		price: 13.95,
+		price: '$13.95',
 		category: 'House Specials',
 		recommended:'yes',
 		spicy: 'no',
@@ -29,7 +29,7 @@ var menuItems = [
 	},
 	{
 		name: 'Kung Pao Three Delight',
-		price: 12.95,
+		price: '$12.95',
 		category: 'House Specials',
 		recommended: 'no',
 		spicy: 'yes',
@@ -37,7 +37,7 @@ var menuItems = [
 	},
 	{
 		name: 'Shanghai Won Ton Soup',
-		price: 7.95,
+		price: '$7.95',
 		category: 'Soup',
 		recommended: 'no',
 		spicy: 'no',
@@ -45,7 +45,7 @@ var menuItems = [
 	},
 	{
 		name: 'Hot and Sour Soup',
-		price: 7.95,
+		price: '$7.95',
 		category: 'Soup',
 		recommended: 'no',
 		spicy: 'yes',
@@ -53,7 +53,7 @@ var menuItems = [
 	},
 	{	
 		name: 'General Tso\'s Chicken',
-		price: 10.95,
+		price: '$10.95',
 		category: 'Chicken',
 		recommended: 'yes',
 		spicy: 'yes',
@@ -61,7 +61,7 @@ var menuItems = [
 	},
 	{	
 		name: 'Almond Fried Chicken',
-		price: 9.95,
+		price: '$9.95',
 		category: 'Chicken',
 		recommended: 'no',
 		spicy: 'no',
@@ -69,7 +69,7 @@ var menuItems = [
 	},
 	{	
 		name: 'Mandarin Pork',
-		price: 10.95,
+		price: '$10.95',
 		category: 'Pork',
 		recommended: 'no',
 		spicy: 'yes',
@@ -77,7 +77,7 @@ var menuItems = [
 	},
 	{	
 		name: 'Sweet and Sour Pork',
-		price: 9.95,
+		price: '$9.95',
 		category: 'Pork',
 		recommended: 'no',
 		spicy: 'no',
@@ -85,7 +85,7 @@ var menuItems = [
 	},
 	{	
 		name: 'Orange Beef',
-		price: 11.95,
+		price: '$11.95',
 		category: 'Beef',
 		recommended: 'no',
 		spicy: 'yes',
@@ -93,7 +93,7 @@ var menuItems = [
 	},
 	{	
 		name: 'Fresh Ginger Beef',
-		price: 10.95,
+		price: '$10.95',
 		category: 'Beef',
 		recommended: 'no',
 		spicy: 'yes',
@@ -101,7 +101,7 @@ var menuItems = [
 	},
 	{	
 		name: 'Peppered Squid with Green Pepper',
-		price: 12.95,
+		price: '$12.95',
 		category: 'Seafood',
 		recommended: 'no',
 		spicy: 'yes',
@@ -109,7 +109,7 @@ var menuItems = [
 	},
 	{	
 		name: 'Prawns with Lobster Sauce',
-		price: 10.95,
+		price: '$10.95',
 		category: 'Seafood',
 		recommended: 'no',
 		spicy: 'no',
@@ -117,7 +117,7 @@ var menuItems = [
 	},
 	{	
 		name: 'Assorted Chinese Vegetables',
-		price: 8.95,
+		price: '$8.95',
 		category: 'Veggie and Tofu',
 		recommended: 'no',
 		spicy: 'no',
@@ -125,7 +125,7 @@ var menuItems = [
 	},
 	{	
 		name: 'Eggplant with Garlic Sauce',
-		price: 8.95,
+		price: '$8.95',
 		category: 'Veggie and Tofu',
 		recommended: 'no',
 		spicy: 'yes',
@@ -133,7 +133,7 @@ var menuItems = [
 	},
 	{	
 		name: 'China First Fried Rice',
-		price: 10.95,
+		price: '$10.95',
 		category: 'Fried Rice',
 		recommended: 'no',
 		spicy: 'no',
@@ -141,7 +141,7 @@ var menuItems = [
 	},
 	{	
 		name: 'Imperial Fried Rice',
-		price: 9.95,
+		price: '$9.95',
 		category: 'Fried Rice',
 		recommended: 'no',
 		spicy: 'no',
@@ -149,7 +149,7 @@ var menuItems = [
 	},
 	{	
 		name: 'Pan Fried Chow Ho Fun',
-		price: 9.95,
+		price: '$9.95',
 		category: 'Chow Mein',
 		recommended: 'no',
 		spicy: 'no',
@@ -157,7 +157,7 @@ var menuItems = [
 	},
 	{	
 		name: 'Soy Bean Hot Sauce Pork Noodle',
-		price: 7.95,
+		price: '$7.95',
 		category: 'Chow Mein',
 		recommended: 'no',
 		spicy: 'yes',
@@ -165,7 +165,7 @@ var menuItems = [
 	},
 	{	
 		name: 'Roast Pork Egg Foo Young',
-		price: 9.99,
+		price: '$9.99',
 		category: 'Egg Foo Young',
 		recommended: 'no',
 		spicy: 'no',
@@ -173,7 +173,7 @@ var menuItems = [
 	},
 	{	
 		name: 'Shrimp Egg Foo Young',
-		price: 10.99,
+		price: '$10.99',
 		category: 'Egg Foo Young',
 		recommended: 'no',
 		spicy: 'no',

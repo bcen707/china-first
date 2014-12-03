@@ -10,8 +10,10 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.1/angular.min.js"></script>
 
 <body ng-app ="Menu" ng-controller="MenuController">
-	<h1>China First</h1>
-
+	<main class="container-fluid">
+	<header class="title-page">
+		<h1>China First</h1>	
+	</header
 	<nav role="navigation">
 		<ul>
 			<li><a href="#menu">Our Menu</a></li>
@@ -21,7 +23,7 @@
 
 
 	</nav>
-
+<!--
 	<div id="info">
 		<h2>Address</h2>
 		<p> <a href="https://www.google.com/maps/place/4237+University+Way+NE,+Seattle,+WA+98105/@47.6594176,-122.3134221,17z/data=!3m1!4b1!4m2!3m1!1s0x549014f4b5171609:0x17bad4b9e8a57286">4237 University Way NE</p> 
@@ -47,7 +49,7 @@
 		</p>
 
 	</div>
-
+-->
 
 	<!-- Sorting code for food items -->
 	<section>
@@ -56,20 +58,26 @@
 			<div class="btn-group">
 				<button type="button" class="btn btn-default" ng-click="order='name'" ng-class="{active: isSortedBy('name')}">Menu Items</button>
 				<button type="button" class="btn btn-default" ng-click="order='category'" ng-class="{active: isSortedBy('Category')}">Category</button>
+				<button type="button" class="btn btn-default" ng-click="order='price'" ng-class="{active: isSortedBy('price')}">Price</button>
 
 
 			</div>	
+		</div>
+
+		<div class="filter-ui">
+			<input type="text" class="form-control" placeholder="Search to filter menu" ng-model="search">
 		</div>
 
 	</section>
 
 	<section>
 		<ol class="dishes">
-			<li class="dish"> 
+			<li class="dish" ng-repeat="item in menu | filter: search | orderBy : order : reverse"> 
 				<img alt="picture of item.name" ng-src="{{item.picUrl}}">		
 				<div class="attributes">
-				<h2 class="name"> {{item.name}}</h2>	
-				
+				<h2 class="name"> {{item.name}}</h2>
+				<p class="category"> {{item.category}}</p>
+				<p class="price"> {{item.price}}</p>
 
 
 
