@@ -1,9 +1,9 @@
-//22 items
+//22 names
 
 var menuItems = [ 
 
 	{
-		item: 'Fried Chicken Wings (10 pcs.)',
+		name: 'Fried Chicken Wings (10 pcs.)',
 		price: 10.95,
 		category: 'Appetizer',
 		recommended: 'no',
@@ -12,7 +12,7 @@ var menuItems = [
 
 	},
 	{
-		item: 'Egg Rolls (3 pcs.)',
+		name: 'Egg Rolls (3 pcs.)',
 		price: 4.95,
 		category: 'Appetizer',
 		recommended: 'yes',
@@ -20,7 +20,7 @@ var menuItems = [
 		picUrl: 'img/tile2.jpg'
 	},	
 	{
-		item: 'Honey Walnut Prawns',
+		name: 'Honey Walnut Prawns',
 		price: 13.95,
 		category: 'House Specials',
 		recommended:'yes',
@@ -28,7 +28,7 @@ var menuItems = [
 		picUrl: 'img/tile3.jpg'
 	},
 	{
-		item: 'Kung Pao Three Delight',
+		name: 'Kung Pao Three Delight',
 		price: 12.95,
 		category: 'House Specials',
 		recommended: 'no',
@@ -36,7 +36,7 @@ var menuItems = [
 		picUrl: 'img/tile4.jpg'
 	},
 	{
-		item: 'Shanghai Won Ton Soup',
+		name: 'Shanghai Won Ton Soup',
 		price: 7.95,
 		category: 'Soup',
 		recommended: 'no',
@@ -44,7 +44,7 @@ var menuItems = [
 		picUrl: 'img/tile5.jpg'
 	},
 	{
-		item: 'Hot and Sour Soup',
+		name: 'Hot and Sour Soup',
 		price: 7.95,
 		category: 'Soup',
 		recommended: 'no',
@@ -52,7 +52,7 @@ var menuItems = [
 		picUrl: 'img/tile6.jpg'
 	},
 	{	
-		item: 'General Tso\'s Chicken',
+		name: 'General Tso\'s Chicken',
 		price: 10.95,
 		category: 'Chicken',
 		recommended: 'yes',
@@ -60,7 +60,7 @@ var menuItems = [
 		picUrl: 'img/tile7.jpg'
 	},
 	{	
-		item: 'Almond Fried Chicken',
+		name: 'Almond Fried Chicken',
 		price: 9.95,
 		category: 'Chicken',
 		recommended: 'no',
@@ -68,7 +68,7 @@ var menuItems = [
 		picUrl: 'img/tile8.jpg'
 	},
 	{	
-		item: 'Mandarin Pork',
+		name: 'Mandarin Pork',
 		price: 10.95,
 		category: 'Pork',
 		recommended: 'no',
@@ -76,7 +76,7 @@ var menuItems = [
 		picUrl: 'img/tile9.jpg'
 	},
 	{	
-		item: 'Sweet and Sour Pork',
+		name: 'Sweet and Sour Pork',
 		price: 9.95,
 		category: 'Pork',
 		recommended: 'no',
@@ -84,7 +84,7 @@ var menuItems = [
 		picUrl: 'img/tile10.jpg'
 	},
 	{	
-		item: 'Orange Beef',
+		name: 'Orange Beef',
 		price: 11.95,
 		category: 'Beef',
 		recommended: 'no',
@@ -92,7 +92,7 @@ var menuItems = [
 		picUrl: 'img/tile11.jpg'
 	},
 	{	
-		item: 'Fresh Ginger Beef',
+		name: 'Fresh Ginger Beef',
 		price: 10.95,
 		category: 'Beef',
 		recommended: 'no',
@@ -100,7 +100,7 @@ var menuItems = [
 		picUrl: 'img/tile12.jpg'
 	},
 	{	
-		item: 'Peppered Squid with Green Pepper',
+		name: 'Peppered Squid with Green Pepper',
 		price: 12.95,
 		category: 'Seafood',
 		recommended: 'no',
@@ -108,7 +108,7 @@ var menuItems = [
 		picUrl: 'img/tile13.jpg'
 	},
 	{	
-		item: 'Prawns with Lobster Sauce',
+		name: 'Prawns with Lobster Sauce',
 		price: 10.95,
 		category: 'Seafood',
 		recommended: 'no',
@@ -116,7 +116,7 @@ var menuItems = [
 		picUrl: 'img/tile14.jpg'
 	},
 	{	
-		item: 'Assorted Chinese Vegetables',
+		name: 'Assorted Chinese Vegetables',
 		price: 8.95,
 		category: 'Veggie and Tofu',
 		recommended: 'no',
@@ -124,7 +124,7 @@ var menuItems = [
 		picUrl: 'img/tile15.jpg'
 	},
 	{	
-		item: 'Eggplant with Garlic Sauce',
+		name: 'Eggplant with Garlic Sauce',
 		price: 8.95,
 		category: 'Veggie and Tofu',
 		recommended: 'no',
@@ -132,7 +132,7 @@ var menuItems = [
 		picUrl: 'img/tile16.jpg'
 	},
 	{	
-		item: 'China First Fried Rice',
+		name: 'China First Fried Rice',
 		price: 10.95,
 		category: 'Fried Rice',
 		recommended: 'no',
@@ -140,7 +140,7 @@ var menuItems = [
 		picUrl: 'img/tile17.jpg'
 	},
 	{	
-		item: 'Imperial Fried Rice',
+		name: 'Imperial Fried Rice',
 		price: 9.95,
 		category: 'Fried Rice',
 		recommended: 'no',
@@ -148,7 +148,7 @@ var menuItems = [
 		picUrl: 'img/tile18.jpg'
 	},
 	{	
-		item: 'Pan Fried Chow Ho Fun',
+		name: 'Pan Fried Chow Ho Fun',
 		price: 9.95,
 		category: 'Chow Mein',
 		recommended: 'no',
@@ -156,7 +156,7 @@ var menuItems = [
 		picUrl: 'img/tile19.jpg'
 	},
 	{	
-		item: 'Soy Bean Hot Sauce Pork Noodle',
+		name: 'Soy Bean Hot Sauce Pork Noodle',
 		price: 7.95,
 		category: 'Chow Mein',
 		recommended: 'no',
@@ -164,7 +164,7 @@ var menuItems = [
 		picUrl: 'img/tile20.jpg'
 	},
 	{	
-		item: 'Roast Pork Egg Foo Young',
+		name: 'Roast Pork Egg Foo Young',
 		price: 9.99,
 		category: 'Egg Foo Young',
 		recommended: 'no',
@@ -172,7 +172,7 @@ var menuItems = [
 		picUrl: 'img/tile21.jpg'
 	},
 	{	
-		item: 'Shrimp Egg Foo Young',
+		name: 'Shrimp Egg Foo Young',
 		price: 10.99,
 		category: 'Egg Foo Young',
 		recommended: 'no',
