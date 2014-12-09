@@ -26,6 +26,11 @@
 			<nav role="navigation">
 				<!-- Nav tabs -->
 				<ul class="nav nav-tabs" role="tablist">
+
+
+
+					<li role="presentation" class="active"><a href="#home" aria-controls="" role="tab" data-toggle="tab">Home</a></li>
+
 				  	<li role="presentation" class="active"><a href="#menu" aria-controls="menu" role="tab" data-toggle="tab">Menu</a></li>
 				    <li role="presentation"><a href="#review" aria-controls="review" role="tab" data-toggle="tab">Reviews</a></li>
 				    <li role="presentation"><a href="#info" aria-controls="info" role="tab" data-toggle="tab">Info</a></li>
@@ -34,10 +39,17 @@
 			</nav>	
 		</header>
 
+
+
 		  <!-- Tab panes -->
 		  <div class="tab-content">
+
+			<div role="tabpanel" class="tab-pane active" id="home">
+				
+			</div>	
+
 		    <div role="tabpanel" class="tab-pane active" id="menu">
-		    	<section>
+		    	
 
 					<div class="filter-ui">
 						<span>Filter By:</span>
@@ -53,10 +65,9 @@
 						<input type="text" class="form-control" placeholder="Search to filter menu" ng-model="search">
 					</div>
 
-				</section>
+				
 
 				<section>
-
 					<ol class="dishes">
 						<li class="dish" ng-repeat="item in menu | filter: search | orderBy : order : reverse"> 
 							<img alt="picture of item.name" ng-src="{{item.picUrl}}" />		
@@ -67,7 +78,6 @@
 							</div>	
 						</li>
 					</ol>	
-
 				</section>
 		    </div>
 		    <div role="tabpanel" class="tab-pane" id="review">herp</div>
