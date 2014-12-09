@@ -22,7 +22,6 @@
 <body ng-app ="Menu" ng-controller="MenuController">
 	<main class="container-fluid">
 		<header>
-			<h1>China First</h1>
 			<nav role="navigation">
 				<!-- Nav tabs -->
 				<ul class="nav nav-tabs" role="tablist">
@@ -31,7 +30,7 @@
 
 					<li role="presentation" class="active"><a href="#home" aria-controls="" role="tab" data-toggle="tab">Home</a></li>
 
-				  	<li role="presentation" class="active"><a href="#menu" aria-controls="menu" role="tab" data-toggle="tab">Menu</a></li>
+				  	<li role="presentation"><a href="#menu" aria-controls="menu" role="tab" data-toggle="tab">Menu</a></li>
 				    <li role="presentation"><a href="#review" aria-controls="review" role="tab" data-toggle="tab">Reviews</a></li>
 				    <li role="presentation"><a href="#info" aria-controls="info" role="tab" data-toggle="tab">Info</a></li>
 				    <li role="presentation"><a href="#gallery" aria-controls="gallery" role="tab" data-toggle="tab">Gallery</a></li>
@@ -45,16 +44,25 @@
 		  <div class="tab-content">
 
 			<div role="tabpanel" class="tab-pane active" id="home">
-				
+				<h1>China First</h1>
+				<p>4237 University Way NE, Seattle, WA 98105 | (206) 634-3533</p>
+
+				<!-- Image Carousel here, will revisit, some issues with overriding scripts-->
+
+
+
+
+
+
+
+
 			</div>	
 
-		    <div role="tabpanel" class="tab-pane active" id="menu">
-		    	
-
+		    <div role="tabpanel" class="tab-pane" id="menu">
 					<div class="filter-ui">
-						<span>Filter By:</span>
+						<span>Sort By:</span>
 						<div class="btn-group">
-							<button type="button" class="btn btn-default" ng-click="order='name'" ng-class="{active: isSortedBy('name')}">Menu Items</button>
+							<button type="button" class="btn btn-default" ng-click="order='name'" ng-class="{active: isSortedBy('name')}">Alphabetical</button>
 							<button type="button" class="btn btn-default" ng-click="order='category'" ng-class="{active: isSortedBy('Category')}">Category</button>
 							<button type="button" class="btn btn-default" ng-click="order='price'" ng-class="{active: isSortedBy('price')}">Price</button>
 
@@ -102,6 +110,12 @@
 					<h2>To Order</h2>
 					<p>Call us at 
 						<a href="tel:206-634-3553">(206) 634-3553</a>
+					</p>
+
+					<h2>About China First</h2>
+
+					<p>
+						You’ll love our delicious Chinese dishes. We use the finest and freshest ingredients. Try our homemade fried or steamed potstickers filled with pork and vegetables for only $5.95 or our popular fried crab Rangoon: cream cheese and imitation crab meat wrapped in a crispy crust for only $5.95. Our House Specials include Crispy Duck, Happy Family with prawns, chicken, beef, pork with veggies in our special sauce for only $10.95. Your favorite dishes are prepared with your choice of chicken, pork, beef, seafood, veggies and tofu. We’re open daily from 11:30 a.m. for lunch and dinner. Call or order online for pickup or free delivery with a minimum order of $18. Check our online coupons for free menu items and discounts on your order.
 					</p>
 
 				</div>
