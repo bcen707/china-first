@@ -2,98 +2,135 @@
 <html>
 <head>
 	<title>Welcome to China First</title>
-
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/main.css">
-
-</head>
 	<meta charset="UTF-8">
-	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.1/angular.min.js"></script>
-
+</head>
 <body ng-app ="Menu" ng-controller="MenuController">
 	<main class="container-fluid">
-	<header class="title-page">
-		<h1>China First</h1>	
-	</header
-	<nav role="navigation">
-		<ul>
-			<li><a href="#menu">Our Menu</a></li>
-			<li><a href="#review">Review</a></li>
-			<li><a href="#Info">Info &amp; Location</a></li>
-		</ul>
+		<header>
+			<h1>China First</h1>
+			<nav role="navigation">
+				<!-- Nav tabs -->
+				<ul class="nav nav-tabs" role="tablist">
+				  	<li role="presentation" class="active"><a href="#menu" aria-controls="menu" role="tab" data-toggle="tab">Menu</a></li>
+				    <li role="presentation"><a href="#review" aria-controls="review" role="tab" data-toggle="tab">Reviews</a></li>
+				    <li role="presentation"><a href="#info" aria-controls="info" role="tab" data-toggle="tab">Info</a></li>
+				    <li role="presentation"><a href="#gallery" aria-controls="gallery" role="tab" data-toggle="tab">Gallery</a></li>
+				</ul>
+			</nav>	
+		</header>
+
+		  <!-- Tab panes -->
+		  <div class="tab-content">
+		    <div role="tabpanel" class="tab-pane active" id="menu">
+		    	<section>
+
+					<div class="filter-ui">
+						<span>Filter By:</span>
+						<div class="btn-group">
+							<button type="button" class="btn btn-default" ng-click="order='name'" ng-class="{active: isSortedBy('name')}">Menu Items</button>
+							<button type="button" class="btn btn-default" ng-click="order='category'" ng-class="{active: isSortedBy('Category')}">Category</button>
+							<button type="button" class="btn btn-default" ng-click="order='price'" ng-class="{active: isSortedBy('price')}">Price</button>
+
+						</div>	
+					</div>
+
+					<div class="sort-ui">
+						<input type="text" class="form-control" placeholder="Search to filter menu" ng-model="search">
+					</div>
+
+				</section>
+
+				<section>
+
+					<ol class="dishes">
+						<li class="dish" ng-repeat="item in menu | filter: search | orderBy : order : reverse"> 
+							<img alt="picture of item.name" ng-src="{{item.picUrl}}" />		
+							<div class="attributes">
+								<h2 class="name"> {{item.name}}</h2>
+								<p class="category"> {{item.category}}</p>
+								<p class="price"> {{item.price}}</p>
+							</div>	
+						</li>
+					</ol>	
+
+				</section>
+		    </div>
+		    <div role="tabpanel" class="tab-pane" id="review">herp</div>
+		    <div role="tabpanel" class="tab-pane" id="info">
+		    	<div id="info">
+					<h2>Address</h2>
+					<p> <a href="https://www.google.com/maps/place/4237+University+Way+NE,+Seattle,+WA+98105/@47.6594176,-122.3134221,17z/data=!3m1!4b1!4m2!3m1!1s0x549014f4b5171609:0x17bad4b9e8a57286">4237 University Way NE</p> 
+					<p>Seattle, WA 98105</p> </a>	
 
 
-	</nav>
-<!--
-	<div id="info">
-		<h2>Address</h2>
-		<p> <a href="https://www.google.com/maps/place/4237+University+Way+NE,+Seattle,+WA+98105/@47.6594176,-122.3134221,17z/data=!3m1!4b1!4m2!3m1!1s0x549014f4b5171609:0x17bad4b9e8a57286">4237 University Way NE</p> 
-		<p>Seattle, WA 98105</p> </a>	
+
+
+					<h2>Store Hours</h2>
+					<ul>
+					<li class="day"><span>11:30 AM  to  9:30 PM</span> (Sun)  </li>
+					<li class="day"><span>11:30 AM  to  9:30 PM</span> (Mon)  </li>
+					<li class="day"><span>11:30 AM  to  9:30 PM</span> (Tue)  </li>
+					<li class="day"><span>11:30 AM  to  9:30 PM</span> (Wed)  </li>
+					<li class="day"><span>11:30 AM  to  9:30 PM</span> (Thu)  </li>
+					<li class="day"><span>11:30 AM  to  9:30 PM</span> (Fri)  </li>
+					<li class="day"><span>11:30 AM  to  9:30 PM</span> (Sat)  </li>
+					</ul>
+
+					<h2>To Order</h2>
+					<p>Call us at 
+						<a href="tel:206-634-3553">(206) 634-3553</a>
+					</p>
+
+				</div>
+		    </div>
+		    <div role="tabpanel" class="tab-pane" id="gallery">...</div>
+		  </div>
+	<!--
+		<div id="info">
+			<h2>Address</h2>
+			<p> <a href="https://www.google.com/maps/place/4237+University+Way+NE,+Seattle,+WA+98105/@47.6594176,-122.3134221,17z/data=!3m1!4b1!4m2!3m1!1s0x549014f4b5171609:0x17bad4b9e8a57286">4237 University Way NE</p> 
+			<p>Seattle, WA 98105</p> </a>	
 
 
 
 
-		<h2>Store Hours</h2>
-		<ul>
-		<li class="day"><span>11:30 AM  to  9:30 PM</span> (Sun)  </li>
-		<li class="day"><span>11:30 AM  to  9:30 PM</span> (Mon)  </li>
-		<li class="day"><span>11:30 AM  to  9:30 PM</span> (Tue)  </li>
-		<li class="day"><span>11:30 AM  to  9:30 PM</span> (Wed)  </li>
-		<li class="day"><span>11:30 AM  to  9:30 PM</span> (Thu)  </li>
-		<li class="day"><span>11:30 AM  to  9:30 PM</span> (Fri)  </li>
-		<li class="day"><span>11:30 AM  to  9:30 PM</span> (Sat)  </li>
-		</ul>
+			<h2>Store Hours</h2>
+			<ul>
+			<li class="day"><span>11:30 AM  to  9:30 PM</span> (Sun)  </li>
+			<li class="day"><span>11:30 AM  to  9:30 PM</span> (Mon)  </li>
+			<li class="day"><span>11:30 AM  to  9:30 PM</span> (Tue)  </li>
+			<li class="day"><span>11:30 AM  to  9:30 PM</span> (Wed)  </li>
+			<li class="day"><span>11:30 AM  to  9:30 PM</span> (Thu)  </li>
+			<li class="day"><span>11:30 AM  to  9:30 PM</span> (Fri)  </li>
+			<li class="day"><span>11:30 AM  to  9:30 PM</span> (Sat)  </li>
+			</ul>
 
-		<h2>To Order</h2>
-		<p>Call us at 
-			<a href="tel:206-634-3553">(206) 634-3553</a>
-		</p>
+			<h2>To Order</h2>
+			<p>Call us at 
+				<a href="tel:206-634-3553">(206) 634-3553</a>
+			</p>
 
-	</div>
--->
-
-	<!-- Sorting code for food items -->
-	<section>
-		<div class="sort-ui">
-			<span>Sort By:</span>
-			<div class="btn-group">
-				<button type="button" class="btn btn-default" ng-click="order='name'" ng-class="{active: isSortedBy('name')}">Menu Items</button>
-				<button type="button" class="btn btn-default" ng-click="order='category'" ng-class="{active: isSortedBy('Category')}">Category</button>
-				<button type="button" class="btn btn-default" ng-click="order='price'" ng-class="{active: isSortedBy('price')}">Price</button>
-
-
-			</div>	
 		</div>
+	-->
 
-		<div class="filter-ui">
-			<input type="text" class="form-control" placeholder="Search to filter menu" ng-model="search">
-		</div>
+	</main>
+	<!-- link to jQuery -->
+	<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 
-	</section>
+	<!-- link to Angular.js -->
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.1/angular.min.js"></script>
 
-	<section>
-		<ol class="dishes">
-			<li class="dish" ng-repeat="item in menu | filter: search | orderBy : order : reverse"> 
-				<img alt="picture of item.name" ng-src="{{item.picUrl}}">		
-				<div class="attributes">
-				<h2 class="name"> {{item.name}}</h2>
-				<p class="category"> {{item.category}}</p>
-				<p class="price"> {{item.price}}</p>
+	<!-- Bootstrap js -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
 
-
-
-
-				</div>	
-			</li>
-		</ol>	
-
-	</section>
-	
+	<!-- link to Angular app -->
+	<script src="js/app.js"></script>
 
 	<!-- link to menu items -->
 	<script src="js/menu.js"></script>
 
-	<!-- link to Angular app -->
-	<script src="js/app.js"></script>	
 
 </body>
 </html>

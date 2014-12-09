@@ -1,13 +1,38 @@
-/* a:link,a:visited {
-	color: #0000EE;
-
-} */
 
 @import url(http://fonts.googleapis.com/css?family=Oxygen:400,300);
+@import url(http://fonts.googleapis.com/css?family=Raleway:700,400);
 
 body {
     font-family: 'Oxygen', 'Helvetica Neue', 'Helvetica', sans-serif;
     font-weight: 300;
+    background-image: url("./img/minimal_background.jpg");
+/*    background-color: #D46E1C;*/
+}
+
+h1 {
+    font-family: 'Raleaway', 'Helvetica', sans-serif;
+    font-size: 5em;
+    font-weight: 700;
+    text-align: center;
+}
+
+header {
+    text-align: center;
+    margin-top: 5px;
+
+}
+
+main {
+    width: 80%;
+}
+
+.container-fluid {
+    width: 80%;
+    background-color: white;
+    border: 5px solid black;
+    border-radius: 7px;
+    border-top: none;
+    border-bottom: none;
 }
 
 .sort-ui, .filter-ui {
@@ -24,9 +49,9 @@ body {
     padding: 10px;
     margin-bottom: 0.5em;
     border: 1px solid #CCC;
-    background-color: #EEE];
-    border-radius: 5px;
-    clear: both;
+    background-color: #EEE;
+    border-radius: 4px;
+    overflow:hidden;
 }
 
 .dish img {
@@ -52,5 +77,9 @@ body {
 
 .dish .category {
     font-size: 125%;
+}
+
+.filter-ui {
+    margin-top: 10px;
 }
 
