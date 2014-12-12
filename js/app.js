@@ -9,7 +9,10 @@ angular.module('Menu', ['ReviewApp'])
 
 	});
 
-  This is what I have instead...
+
+var today = new Date();
+var storeHours = new Date();
+
 
 /*
 	
