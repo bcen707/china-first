@@ -45,13 +45,12 @@
 
 		  <!-- Tab panes -->
 		  <div class="tab-content">
-			
 
 			<div role="tabpanel" class="tab-pane active" id="home">
-				
 				<p>4237 University Way NE, Seattle, WA 98105 | (206) 634-3533</p>
 
 				<!-- Image Carousel here, will revisit, some issues with overriding scripts-->
+
 
 
 
@@ -93,7 +92,7 @@
 		    </div>
 		    <div role="tabpanel" class="tab-pane" id="review" ng-controller="ReviewCtrl">
 		    	<section>
-                <h2>Add a Review</h2>
+                <h2 class="reviewHeader">Add a Review</h2>
                 <form ng-submit="addReview(currentReview)" class="form-horizontal" role="form">
                     <div class="form-group">
                         <label for="review-title"class="col-sm-1 control-label">Title</label>
@@ -137,9 +136,9 @@
                 -->
             <hr />
             <section>
-                <h2>Reviews</h2>
+                <h2 class="reviewHeader">Reviews</h2>
                 <div class="singleReview" ng-repeat="review in reviews | orderBy:'-score' | limitTo: 5">
-                    <div class="btnDiv">
+                    <div class="ratingBtns">
                         <span class="reviewRating">Review Score: {{negativeTest(review.score, review.objectId)}}</span>
                         <btn class="btn btn-success" ng-click="incrimentScore(1, review.objectId, review.score)">[ + ]</btn>
                         <btn class="btn btn-warning" ng-click="incrimentScore(-1, review.objectId, review.score)">[ - ]</btn>
