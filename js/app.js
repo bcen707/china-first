@@ -9,6 +9,11 @@ angular.module('Menu', ['ReviewApp'])
 
 	});
 
+
+var today = new Date();
+var storeHours = new Date();
+
+
 /*
 	
 angular.module('ui.bootstrap.demo', ['ui.bootstrap']);
