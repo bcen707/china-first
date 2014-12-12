@@ -1,0 +1,470 @@
+
+div.cateringkategorie {
+	display:inline-block;
+	width:25%;
+	height:150px;
+	margin:10px;
+	background-color: rgba(129,1,0,0.7);
+	opacity:0.9;
+}
+
+div.cateringbild {
+	height:80%;
+	margin:5px;
+	background-image:url(http://consumerrecipe.conagrafoods.com/uploadedImages/img_5185_2277.JPEG)
+}
+
+.wpdevbk label {
+	color:#ddd!important;
+	font-family: Officina_bold!important;
+	margin-bottom:0px!important;
+}
+
+div.cateringkategorie:hover {
+	opacity:1;
+}
+
+div.cateringkategorie a:hover {
+	text-decoration:none;
+	color: #222;
+}
+
+.booking_form .control-group,
+.wpdevbk button.btn {
+   display:none!important;
+}
+    
+
+div.bk_calendar_frame {
+	width:100%!important;
+}
+
+
+
+
+@font-face {
+    font-family: 'Officina_bold';
+    src: url('font/officinaserifstd-bold-webfont.eot');
+    src: url('font/officinaserifstd-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/officinaserifstd-bold-webfont.woff') format('woff'),
+         url('font/officinaserifstd-bold-webfont.ttf') format('truetype'),
+         url('font/officinaserifstd-bold-webfont.svg#itc_officina_serif_std_bookBd') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+a.navi.schrift {
+	font-family:Officina_bold;
+	margin-left:14px;
+	font-size:21pt;
+}
+
+a.navi.schrift:hover {
+	color:#200;
+	text-decoration:none;
+}
+
+body {
+	background-color:#200000;
+	margin:0;
+	padding:0;
+	color:#f9e4bf;	
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:12px;
+	}
+
+p {
+	margin:10px 12px;
+	line-height:16px;
+	}
+	
+h2 {
+	font-family:Officina_bold, "Times New Roman", Times, serif;
+	font-size:20pt;
+	text-transform:uppercase;
+	margin:7px 10px 18px;
+	text-decoration:none;
+	}
+
+h3 {
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:13px;
+	margin:0;
+	}
+h4 {
+	font-family:Officina_bold, "Times New Roman", Times, serif;
+	font-size:18px;
+	margin:10px 0  0 10px;
+	}
+a:link, a:visited {
+	text-decoration:none;
+	font-weight:bold;
+	color:#f9e4bf;
+}
+a:hover, a:active {
+	text-decoration:underline;
+	font-weight:bold;
+	border:none;
+}
+a img {border-width:0px;}
+
+a:focus {
+	outline:none;
+}
+
+strong {font-weight:bold;}
+strong.invers {
+	background-color: #f9e4bf;
+	color: #5b3000;
+	font-size:12px;
+	}
+ul {
+	padding-left:0;
+	list-style-type:none;
+	}
+
+#wrapper {
+	margin:0 auto;
+	position:relative;
+	width:954px;
+	z-index: 100;
+}
+
+#header {
+	background:url(img/header.jpg) no-repeat scroll center;
+	position:relative;
+	width:954px;
+	height:725px;
+	}
+
+#middle {
+	background:url(images/content.jpg) repeat-y scroll top;
+	position:relative;
+	width:954px;
+	min-height:144px;
+	}
+#content-wrapper {
+	width:706px;
+	/*height:100px;*/
+	margin:0 100px 0 124px;
+	}
+.clear {
+	clear:both;
+	margin-bottom: 40px;
+	}
+.clear-nomargin {
+	clear:both;
+	}
+
+#footer-wrapper {
+	margin:0 auto;
+	position:relative;
+	width:954px;
+	z-index:10;
+}
+
+#footer {
+	background:url(../img/footer.jpg) scroll center no-repeat;
+	height:459px;
+	}
+	
+#content {
+	position:relative;
+	float:right;
+	width:470px;
+	min-height:125px;
+	margin-top:-130px;
+	}
+
+#navigation {
+	position:absolute;
+	float:left;
+	width:228px;
+	height:300px;
+	margin-top:-120px;
+	}
+
+	
+.navi {margin-top:14px;}
+.navi-home {margin-top:1px;}
+.navi-menu {margin-top:8px;}
+		
+.alignleft {
+	float:left;
+	margin:3px 12px 3px 0;
+	}
+	
+.alignright {
+	float:right;
+	margin:3px 0px 3px 12px;
+	}
+
+#teaser {
+	position:absolute;
+	margin:25px 92px 0 119px;
+	}
+	
+.teaser-block {
+	float:left;
+	width:208px;
+	height:208px;
+	margin:15px;
+	}
+
+.teaser-block p {
+	margin:0;
+	}
+
+.teaser-block h2 {
+	margin:10px 0;
+	}
+
+#footer-content {
+	position:absolute;
+	margin:320px 0 0 119px;
+	z-index:10;
+	}
+
+.footer-column {
+	float:left;
+	width:208px;
+	height:100px;
+	margin:15px;
+	}
+
+.footer-column p, .footer-column h3 {
+	margin:0;
+	color: #5b3000;
+	}
+.footer-column h3 {
+	margin-bottom:8px;
+	}
+.footer-column a:link, .footer-column a:visited {
+	color: #5b3000;
+	}	
+.edit-button {vertical-align:10px; margin-left:12px;}
+	 	
+form, label {margin:-6px 0 8px 0;}
+input {
+	font-style:italic;
+	color:#666666;
+	background-color:#f9e4bf;
+	border: dotted 1px #5b3000;
+	}
+textarea {
+	border: none;
+	padding:2px;
+	}
+.button {
+	background: url(images/ok.png)  no-repeat;
+	border:none;
+	width:31px;
+	height:34px;
+	cursor:pointer;
+	}
+
+#rss-icon {
+	float:right; 
+	margin:9px 31px 0 0;
+	}
+#impressum-icon {
+	float:right; 
+	margin:28px 31px 0 0;
+	}
+#kontakt-icon {
+	float:right; 
+	margin:8px 18px 0 0;
+	}
+#impressum-icon img, #rss-icon img, #kontakt-icon img {margin-left:5px;}
+
+#contact-form {
+	background:url(images/form_bg.png) no-repeat;
+	margin:5px 10px;
+	padding:71px 0 0 106px;
+	height:399px;
+	}
+
+#wpsf_contact_name, #wpsf_contact_email, #wpsf_contact_subject, #wpsf_contact_message{
+	background:none;
+	border: none;
+	width:220px;
+	padding:3px;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:12px;
+	font-style:normal;
+	line-height:30px;
+	color:#200000;
+	background:none;
+	}
+	
+#wpsf_contact_email {margin-top: 10px;}
+#wpsf_contact_subject {margin-top: 10px;}
+#wpsf_contact_message {
+	margin-top:12px;
+	height:180px;
+	}
+#contact-form-submit {
+	background:none;
+	border:none;
+	width:80px;
+	height:21px;
+	margin:21px 0 0 70px;
+	cursor:pointer;
+	}
+#content p {
+	
+}
+
+/*
+-------------------------
+DAILYS + SPEISEKARTE
+-------------------------
+*/
+.content-container{width:370px;}
+.daily-navi{margin:20px 0 5px;}
+.daily-navi img{margin:0 2px;}
+.roterkasten-oben{
+	background:url(images/tapas_bg_oben.png) no-repeat;
+	width:370px;
+	height:53px;
+	position:relative;
+	}
+.roterkasten-mitte{
+	background:url(images/tapas_bg_mitte.png) repeat-y;
+	position:relative;
+	width:370px;
+	min-height:35px;
+	}
+.roterkasten-mitte-content{
+	float:right;
+	margin-top:-42px;
+	position:relative;
+	width:370px;
+	z-index:1;
+	}
+.roterkasten-mitte-content h3{margin-left:17px;}
+.roterkasten-mitte-content p{margin-left:17px;}
+.roterkasten-mitte-content .preis{margin:-6px 17px 0;}
+.roterkasten-unten{
+	float:left;
+	margin:-41px 0 30px;
+	background:url(images/tapas_bg_unten.png) no-repeat;
+	width:370px;
+	height:43px;
+	position:relative;
+	}
+.preis {
+	text-align:right;
+	font-weight:bold;
+	margin:0 12px 30px;
+	}
+.preistabelle {
+	text-align:right;
+	font-weight:bold;
+	}
+.content-container h2 {margin:10px 10px 0;}
+
+.content-container p {
+	line-height:16px;
+	margin:5px 12px;
+	}
+/*
+-----------------------------
+eventcalendar
+-----------------------------
+*/
+table.ec3_schedule {
+	background-color: #680000;
+	border-collapse:collapse;
+	margin:0.5ex 1ex 0 12px;
+	border:solid 1px #680000;
+	}
+table.ec3_schedule td {
+	padding:0 0.5ex 0 0.5ex;
+	color:#F9E4BF;
+	font-size:10px;
+	}
+.kalender-mo, .kalender-di, .kalender-mi, .kalender-do, .kalender-fr, .kalender-sa, .kalender-so {
+	color:#900000;
+	width:112px;
+	height:140px;
+	margin:0 12px;
+	float:left;
+	} 
+.kalender-mo {background-image:url(images/kalender/mo.png);}
+.kalender-di {background-image:url(images/kalender/di.png);}
+.kalender-mi {background-image:url(images/kalender/mi.png);}
+.kalender-do {background-image:url(images/kalender/do.png);}
+.kalender-fr {background-image:url(images/kalender/fr.png);}
+.kalender-sa {background-image:url(images/kalender/sa.png);}
+.kalender-so {background-image:url(images/kalender/so.png);}
+
+.kalender-mo p {margin: 0px;}
+.kalender-di p {margin: 0px;}
+.kalender-mi p {margin: 0px;}
+.kalender-do p {margin: 0px;}
+.kalender-fr p {margin: 0px;}
+.kalender-sa p {margin: 0px;}
+.kalender-so p {margin: 0px;}
+
+
+.kalender-tag{
+	position:relative;
+	text-align:center;
+	padding:53px 0 0;
+	margin:0 0 0 -5px;
+	font-size:60px;
+	}                                 
+.kalender-monat {
+	position:relative;
+	text-align:center;
+	padding: 1px;
+	margin:-6px 0 0;
+	}
+.event {padding-top:14px;}
+
+
+.beachclub {
+		position: absolute;
+		right: 200px;
+		z-index: 10000;
+		top: 0px;
+		height: 140px;
+		width: 240px;
+		display: block;
+		background: url(images/nuevo_beachclub-240x140.png);
+		margin: 0 auto;
+		text-indent: -9999px;
+}
+
+.carousel-inner {
+	background-image: url(../img/content.jpg);
+	background-repeat: repeat-y;
+	background-position: center;
+	background-size: 954px auto;
+}
+
+.jobs {
+	display: block;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 320px;
+	height: 110px;
+
+	z-index: 999;
+	background: url(images/jobs.png) no-repeat center center;
+	text-indent: -999px;
+}
+header {
+	margin-left: 30%;
+	margin-right: 30%;
+	background-image: url(../img/content.jpg);
+	background-position: center;
+	background-size: 954px auto;
+}	
+/*
+WP-Stats
+*/
+img#wpstats{display:none}
