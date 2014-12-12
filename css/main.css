@@ -105,3 +105,7 @@ html, body, .container-fluid {
 #buttonDiv {
     text-align: center;
 }
+
+#map-canvas {
+    height: 500px;
+}

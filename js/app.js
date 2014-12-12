@@ -2,6 +2,21 @@
 
 angular.module('Menu', ['ReviewApp', 'Carousel'])
 	.controller('MenuController', function($scope) {
+    angular.element(document).ready(function () {
+        function initialize() {
+          var mapOptions = {
+            center: { lat: 47.659420, lng: -122.313302},
+            zoom: 12
+          };
+          var map = new google.maps.Map(document.getElementById('map-canvas'),
+            mapOptions);
+        }
+        var infoWindow = new google.maps.InfoWindow();
+        infoWindow.setContent(
+
+        );
+        google.maps.event.trigger(map, 'resize');
+    });
 	$scope.menu = menuItems;
 
 
