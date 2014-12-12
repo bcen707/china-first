@@ -101,6 +101,9 @@ html, body, .container-fluid {
     margin-bottom: 1em;
 }
 
+.carousel-control.left, .carousel-control.right {
+    background-color: black;
+}
 
 #buttonDiv {
     text-align: center;
@@ -109,3 +112,4 @@ html, body, .container-fluid {
 #map {
     height: 500px;
 }
+

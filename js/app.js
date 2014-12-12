@@ -6,7 +6,6 @@ angular.module('Menu', ['ReviewApp', 'Carousel', 'googleMaps'])
 
 
 
-
 	});
 
 
@@ -23,14 +22,11 @@ angular.module('Carousel', ['ui.bootstrap'])
     $scope.myInterval = 5000;
     var slides = $scope.slides = [];
     $scope.addSlide = function() {
-      var newWidth = 600 + slides.length + 1;
       slides.push({
-        image: 'http://placekitten.com/' + newWidth + '/300',
-        text: ['More','Extra','Lots of','Surplus'][slides.length % 4] + ' ' +
-          ['Cats', 'Kittys', 'Felines', 'Cutes'][slides.length % 4]
+        image: "img/carousel" + index + ".jpg",
       });
     };
-    for (var i=0; i<4; i++) {
+    for (var index = 1; index <= 4; index++) {
       $scope.addSlide();
     }
   });
