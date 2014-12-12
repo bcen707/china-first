@@ -9,6 +9,8 @@ angular.module('Menu', ['ReviewApp'])
 
 	});
 
+  This is what I have instead...
+
 /*
 	
 angular.module('ui.bootstrap.demo', ['ui.bootstrap']);
