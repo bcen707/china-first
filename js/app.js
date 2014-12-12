@@ -1,6 +1,6 @@
 "use strict";
 
-angular.module('Menu', [])
+angular.module('Menu', ['ReviewApp'])
 	.controller('MenuController', function($scope) {
 	$scope.menu = menuItems;
 

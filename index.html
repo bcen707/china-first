@@ -19,8 +19,8 @@
     -->
 
 </head>
-<body ng-app ="Menu" ng-controller="MenuController">
-	<main class="container-fluid">
+<body>
+	<main class="container-fluid" ng-app ="Menu">
 		<header>
 			<nav role="navigation">
 				<!-- Nav tabs -->
@@ -58,7 +58,7 @@
 
 			</div>	
 
-		    <div role="tabpanel" class="tab-pane" id="menu">
+		    <div role="tabpanel" class="tab-pane" id="menu" ng-controller="MenuController">
 					<div class="filter-ui">
 						<span>Sort By:</span>
 						<div class="btn-group">
