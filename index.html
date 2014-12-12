@@ -36,7 +36,7 @@
 				  	<li role="presentation"><a href="#menu" aria-controls="menu" role="tab" data-toggle="tab">Menu</a></li>
 				    <li role="presentation"><a href="#review" aria-controls="review" role="tab" data-toggle="tab">Reviews</a></li>
 				    <li role="presentation"><a href="#info" aria-controls="info" role="tab" data-toggle="tab">Info</a></li>
-				    <li role="presentation"><a href="#gallery" aria-controls="gallery" role="tab" data-toggle="tab">Gallery</a></li>
+				    
 				</ul>
 			</nav>	
 		</header>
@@ -52,7 +52,19 @@
 				<!-- Image Carousel here, will revisit, some issues with overriding scripts-->
 
 
-
+				<div ng-controller="FoodCarousel">
+				  <div>
+				    <carousel interval="myInterval">
+				      <slide ng-repeat="slide in slides" active="slide.active">
+				        <img ng-src="{{slide.image}}" style="margin:auto;">
+				        <div class="carousel-caption">
+				          <h4>Slide {{$index}}</h4>
+				          <p>{{slide.text}}</p>
+				        </div>
+				      </slide>
+				    </carousel>
+				  </div>
+				</div>
 
 
 
