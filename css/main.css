@@ -5,8 +5,14 @@
 body {
     font-family: 'Oxygen', 'Helvetica Neue', 'Helvetica', sans-serif;
     font-weight: 300;
-    background-image: url("./img/minimal_background.jpg");
-/*    background-color: #D46E1C;*/
+    background: rgb(168,0,2); /* Old browsers */
+    background: -moz-linear-gradient(left,  rgba(168,0,2,1) 0%, rgba(168,0,2,1) 5%, rgba(255,196,124,1) 10%, rgba(255,255,255,1) 11%, rgba(255,255,255,1) 72%, rgba(255,255,255,1) 89%, rgba(255,196,124,1) 90%, rgba(255,196,124,1) 90%, rgba(168,0,2,1) 95%, rgba(168,0,2,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(168,0,2,1)), color-stop(5%,rgba(168,0,2,1)), color-stop(10%,rgba(255,196,124,1)), color-stop(11%,rgba(255,255,255,1)), color-stop(72%,rgba(255,255,255,1)), color-stop(89%,rgba(255,255,255,1)), color-stop(90%,rgba(255,196,124,1)), color-stop(90%,rgba(255,196,124,1)), color-stop(95%,rgba(168,0,2,1)), color-stop(100%,rgba(168,0,2,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(left,  rgba(168,0,2,1) 0%,rgba(168,0,2,1) 5%,rgba(255,196,124,1) 10%,rgba(255,255,255,1) 11%,rgba(255,255,255,1) 72%,rgba(255,255,255,1) 89%,rgba(255,196,124,1) 90%,rgba(255,196,124,1) 90%,rgba(168,0,2,1) 95%,rgba(168,0,2,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(left,  rgba(168,0,2,1) 0%,rgba(168,0,2,1) 5%,rgba(255,196,124,1) 10%,rgba(255,255,255,1) 11%,rgba(255,255,255,1) 72%,rgba(255,255,255,1) 89%,rgba(255,196,124,1) 90%,rgba(255,196,124,1) 90%,rgba(168,0,2,1) 95%,rgba(168,0,2,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(left,  rgba(168,0,2,1) 0%,rgba(168,0,2,1) 5%,rgba(255,196,124,1) 10%,rgba(255,255,255,1) 11%,rgba(255,255,255,1) 72%,rgba(255,255,255,1) 89%,rgba(255,196,124,1) 90%,rgba(255,196,124,1) 90%,rgba(168,0,2,1) 95%,rgba(168,0,2,1) 100%); /* IE10+ */
+    background: linear-gradient(to right,  rgba(168,0,2,1) 0%,rgba(168,0,2,1) 5%,rgba(255,196,124,1) 10%,rgba(255,255,255,1) 11%,rgba(255,255,255,1) 72%,rgba(255,255,255,1) 89%,rgba(255,196,124,1) 90%,rgba(255,196,124,1) 90%,rgba(168,0,2,1) 95%,rgba(168,0,2,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a80002', endColorstr='#a80002',GradientType=1 ); /* IE6-9 */
 }
 
 h1 {
@@ -22,8 +28,8 @@ header {
 
 }
 
-main {
-    width: 80%;
+html, body, .container-fluid {
+    min-height: 651px;
 }
 
 .container-fluid {
@@ -85,4 +91,17 @@ main {
 
 .sort-ui {
     width: 250px;
+}
+
+.ratingBtns {
+    float: right;
+}
+
+.reviewHeader {
+    margin-bottom: 1em;
+}
+
+
+#buttonDiv {
+    text-align: center;
 }
