@@ -106,6 +106,6 @@ html, body, .container-fluid {
     text-align: center;
 }
 
-#map-canvas {
+#map {
     height: 500px;
 }

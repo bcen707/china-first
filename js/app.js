@@ -1,22 +1,7 @@
 "use strict";
 
-angular.module('Menu', ['ReviewApp', 'Carousel'])
+angular.module('Menu', ['ReviewApp', 'Carousel', 'googleMaps'])
 	.controller('MenuController', function($scope) {
-    angular.element(document).ready(function () {
-        function initialize() {
-          var mapOptions = {
-            center: { lat: 47.659420, lng: -122.313302},
-            zoom: 12
-          };
-          var map = new google.maps.Map(document.getElementById('map-canvas'),
-            mapOptions);
-        }
-        var infoWindow = new google.maps.InfoWindow();
-        infoWindow.setContent(
-
-        );
-        google.maps.event.trigger(map, 'resize');
-    });
 	$scope.menu = menuItems;
 
 
@@ -48,6 +33,29 @@ angular.module('Carousel', ['ui.bootstrap'])
     for (var i=0; i<4; i++) {
       $scope.addSlide();
     }
+  });
+
+angular.module('googleMaps', [])
+  .controller('MapCtrl', function ($scope) {
+
+      var mapOptions = {
+          center: new google.maps.LatLng(40.0000, -98.0000),
+          zoom: 4
+      }
+
+      $scope.map = new google.maps.Map(document.getElementById('map'), mapOptions);
+      
+      var infoWindow = new google.maps.InfoWindow();
+      
+      var marker = new google.maps.Marker({
+          map: $scope.map,
+          position: new google.maps.LatLng(47.659420, -122.313302),
+          title: "China First"
+      }); 
+
+      infoWindow.setContent("<p>4237 University Way NE</p>");
+      infoWindow.open(map, marker);
+
   });
  
  
