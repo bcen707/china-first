@@ -5,7 +5,7 @@ var menuItems = [
 	{
 		name: 'Fried Chicken Wings (10 pcs.)',
 		price: '$10.95',
-		priceCompare: '1095',
+		priceCompare: 1095,
 		category: 'Appetizer',
 		recommended: 'no',
 		spicy: 'no',
@@ -15,7 +15,7 @@ var menuItems = [
 	{
 		name: 'Egg Rolls (3 pcs.)',
 		price: '$4.95',
-		priceCompare: '495',
+		priceCompare: 495,
 		category: 'Appetizer',
 		recommended: 'yes',
 		spicy: 'no',
@@ -24,7 +24,7 @@ var menuItems = [
 	{
 		name: 'Honey Walnut Prawns',
 		price: '$13.95',
-		priceCompare: '1395',
+		priceCompare: 1395,
 		category: 'House Specials',
 		recommended:'yes',
 		spicy: 'no',

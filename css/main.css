@@ -12,6 +12,15 @@ body {
     background-color: #340000;
 }
 
+footer {
+    background:url(../img/footerExtender.png);
+    background-repeat: repeat-x;
+    width: 100%;
+    max-height: 200px;
+    overflow: hidden;
+    text-align: center;
+}
+
 h1 {
     font-family: 'Raleaway', 'Helvetica', sans-serif;
     font-size: 5em;
@@ -30,15 +39,11 @@ html, body, .container-fluid {
     min-height: 651px;
 }
 
-#footer {
-    
-    width: 100%;
-    height: 500px;
-    overflow: hidden;
-    background-image:url(../img/footer.jpg);
-    background-size: 100%;
-    background-repeat: no-repeat;
 
+#footerImage {
+    height: 200px; 
+    display: inline;
+    max-width: 100%;
 }
 
 .container-fluid {
@@ -115,6 +120,10 @@ html, body, .container-fluid {
     margin-bottom: 1em;
 }
 
+.social-networks {
+    text-align: right;
+}
+
 .carousel-control.left, .carousel-control.right {
     background-color: black;
 }
@@ -122,10 +131,7 @@ html, body, .container-fluid {
 #buttonDiv {
     text-align: center;
 }
-footer {
-    background-image: url(../img/footer.jpg );
-    background-size: auto;
-}
+
 #map {
     height: 500px;
 }
