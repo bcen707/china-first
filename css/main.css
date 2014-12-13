@@ -35,6 +35,9 @@ header {
     background-size : 100%;
 }
 
+header p {
+    text-align: left;
+}
 html, body, .container-fluid {
     min-height: 651px;
 }
@@ -100,10 +103,6 @@ html, body, .container-fluid {
     font-size: 125%;
 }
 
-.filter-ui {
-    margin-top: 10px;
-}
-
 .nav {
     display: inline-block;
     border: 0;
@@ -119,10 +118,6 @@ html, body, .container-fluid {
     background-color: black;
 }
 
-.nav-tabs>li>a:hover, {
-    background: green;
-}
-
 .sort-ui {
     width: 250px;
 }
@@ -132,6 +127,7 @@ html, body, .container-fluid {
 }
 
 .reviewHeader {
+    margin-top: 0px;
     margin-bottom: 1em;
 }
 
