@@ -98,9 +98,8 @@
 		    </div>
 		    
 		    <div role="tabpanel" class="tab-pane" id="review" ng-controller="ReviewCtrl">
-		    	<section>
-                <h2 class="reviewHeader">Add a Review</h2>
-                <form ng-submit="addReview(currentReview)" class="form-horizontal" role="form">
+		    	<h2 class="reviewHeader">Add a Review</h2>
+                <form id="reviewQuery" ng-submit="addReview(currentReview)" class="form-horizontal" role="form">
                     <div class="form-group">
                         <label for="review-title"class="col-sm-1 control-label">Title</label>
                         <div class="col-sm-5">
@@ -124,7 +123,7 @@
                         <label for="rating" class="control-label col-sm-1">Rating</label>
                         <div class="col-sm-11">
                             <rating id="review-rating" ng-model="currentReview.rating" on-hover="hoveringOver(value)" on-leave="overStar = null"></rating>
-                            <span ng-show="overStar">{{hoverRating}}, "{{hoverMessage}}"</span>    
+                            <span ng-show="overStar">{{hoverRating}}</span>    
                         </div>
                     </div>
                     <div class="form-group" id="buttonDiv">
@@ -132,25 +131,16 @@
                         <img src="img/ajax-loader.gif" alt="loading animation" ng-if="addingReview"/>
                     </div>
                 </form>
-                <!--  
-                put a form here for entering a new review
-                the user must select a rating, and enter a name, title, and review body
-                before the review can be saved to the server
-                for the rating selection, use the Angular Bootstrap Rating directive 
-                http://angular-ui.github.io/bootstrap/#/rating
-                their script fi
-            </section>le is included below
-                -->
-	            <hr />
 	            <section>
-	                <h2 class="reviewHeader">Reviews</h2>
+	                <h2 id="singleReviewHeader" class="reviewHeader">Reviews</h2>
 	                <div class="singleReview" ng-repeat="review in reviews | orderBy:'-score' | limitTo: 5">
 	                    <div class="ratingBtns">
 	                        <span class="reviewRating">Review Score: {{review.score}}</span>
-	                        <btn class="btn btn-success" ng-click="incrimentScore(1, review.objectId, review.score)">[ + ]</btn>
-	                        <btn class="btn btn-warning" ng-click="incrimentScore(-1, review.objectId, review.score)">[ - ]</btn>
+	                        <btn class="btn btn-success" ng-click="incrimentScore(1, review.objectId, review.score)"><img src="./img/thumbs-up-icon.png" /></btn>
+	                        <btn class="btn btn-warning" ng-click="incrimentScore(-1, review.objectId, review.score)"><img src="./img/thumbs-down-icon.png" /></btn>
 	                    </div>
 	                    <h3 class="title">{{review.title}}</h3>
+	                    <hr />
 	                    <p class="name">Author: {{review.name}}</p>
 	                    <hr />
 	                    <p class="body">{{review.body}}</p>

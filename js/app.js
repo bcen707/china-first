@@ -68,19 +68,7 @@ angular.module('googleMaps', [])
 
     $scope.hoveringOver = function(value) {
       $scope.overStar = value;
-      $scope.hoverMessage = "";
       $scope.hoverRating = value + "/" + $scope.max;
-      if(value == 1) {
-        $scope.hoverMessage = "Hated it with every fiber of my being!";
-      } else if (value == 2) {
-        $scope.hoverMessage = "Not the best...";
-      } else if (value == 3) {
-        $scope.hoverMessage = "Fine.";
-      } else if (value == 4) {
-        $scope.hoverMessage = "This is pretty cool!";
-      } else if (value == 5) {
-        $scope.hoverMessage = "Envoked feelings from me I thought I'd never feel again.";
-      }
     };
 
     //Parse.com URL base

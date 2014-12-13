@@ -49,6 +49,10 @@ html, body, .container-fluid {
     max-width: 100%;
 }
 
+.btn>img {
+    width: 32px;
+}
+
 .container-fluid {
     width: 80%;
     background-color: white;
@@ -131,10 +135,28 @@ html, body, .container-fluid {
     float: right;
 }
 
+#review {
+    padding: 30px;
+}
+
+#reviewQuery {
+    border: 5px solid black;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: white;
+}
+
 .reviewHeader {
     margin-top: 0px;
     margin-bottom: 1em;
     margin-top: 0;
+}
+
+.singleReview {
+    border: 3px solid black;
+    background-color: white;
+    margin-top: 13px;
+    padding: 15px;
 }
 
 .social-networks {
@@ -166,6 +188,10 @@ html, body, .container-fluid {
 
 #infoAddress {
     margin-top: 0;
+}
+
+#singleReviewHeader {
+    margin-top: 20px;
 }
 
 #map {
