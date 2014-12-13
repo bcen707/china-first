@@ -25,6 +25,7 @@
        		</div>
 
 			<h1>China First</h1>
+			<p>4237 University Way NE Seattle, WA 98105</p>
 
 			<nav role="navigation">
 				<!-- Nav tabs -->
@@ -140,25 +141,25 @@
                 their script fi
             </section>le is included below
                 -->
-            <hr />
-            <section>
-                <h2 class="reviewHeader">Reviews</h2>
-                <div class="singleReview" ng-repeat="review in reviews | orderBy:'-score' | limitTo: 5">
-                    <div class="ratingBtns">
-                        <span class="reviewRating">Review Score: {{review.score}}</span>
-                        <btn class="btn btn-success" ng-click="incrimentScore(1, review.objectId, review.score)">[ + ]</btn>
-                        <btn class="btn btn-warning" ng-click="incrimentScore(-1, review.objectId, review.score)">[ - ]</btn>
-                    </div>
-                    <h3 class="title">{{review.title}}</h3>
-                    <p class="name">Author: {{review.name}}</p>
-                    <hr />
-                    <p class="body">{{review.body}}</p>
-                    <hr />
-                    <p class="rating">Star Rating: {{review.rating}} / 5</p>
-                    <btn class="btn btn-danger" ng-click="deleteReview(review.objectId)">[ Delete ]</btn>
-                </div>
+	            <hr />
+	            <section>
+	                <h2 class="reviewHeader">Reviews</h2>
+	                <div class="singleReview" ng-repeat="review in reviews | orderBy:'-score' | limitTo: 5">
+	                    <div class="ratingBtns">
+	                        <span class="reviewRating">Review Score: {{review.score}}</span>
+	                        <btn class="btn btn-success" ng-click="incrimentScore(1, review.objectId, review.score)">[ + ]</btn>
+	                        <btn class="btn btn-warning" ng-click="incrimentScore(-1, review.objectId, review.score)">[ - ]</btn>
+	                    </div>
+	                    <h3 class="title">{{review.title}}</h3>
+	                    <p class="name">Author: {{review.name}}</p>
+	                    <hr />
+	                    <p class="body">{{review.body}}</p>
+	                    <hr />
+	                    <p class="rating">Star Rating: {{review.rating}} / 5</p>
+	                    <btn class="btn btn-danger" ng-click="deleteReview(review.objectId)">[ Delete ]</btn>
+	                </div>
 
-            </section>
+	            </section>
 		    </div>
 		    <div role="tabpanel" class="tab-pane" id="info">
 		    	<div id="info">
