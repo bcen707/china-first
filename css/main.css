@@ -195,6 +195,14 @@ html, body, .container-fluid {
 }
 
 
+#adressWraper {
+    width: 50%;
+    float: left;
+    
+}
 
-
-
+#hours {
+    width: 50%;
+    float: left;
+    
+}
