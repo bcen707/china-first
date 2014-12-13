@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Armata|Raleway:600);
+@import url(http://fonts.googleapis.com/css?family=Armata|Raleway:600|Forum);
 @import url(http://fonts.googleapis.com/css?family=Oxygen:400,300);
 @import url(http://fonts.googleapis.com/css?family=Raleway:700,400);
 
@@ -31,13 +31,15 @@ h1 {
 
 header {
     text-align: center;
-    background: url(../img/content.jpg);
+    background:url(../img/content.jpg) no-repeat scroll center;
     background-size : 100%;
 }
-
-header p {
+ #address {
     text-align: left;
-}
+    padding-left: 75px;
+    font-size: 1.5em;
+ }
+
 html, body, .container-fluid {
     min-height: 651px;
 }
@@ -71,7 +73,6 @@ html, body, .container-fluid {
 .dish {
     list-style: none;
     padding: 10px;
-    margin-bottom: 0.5em;
     border: 1px solid #CCC;
     background-color: #340000;
     border-radius: 4px;
@@ -80,12 +81,12 @@ html, body, .container-fluid {
 
 .dish img {
     float: left;
-    max-width: 150px;
+    max-width: 100px;
     border-radius: 5px;
 }
 
 .dish .attributes {
-    padding-left: 170px;
+    padding-left: 120px;
 }
 
 .dish .name,
@@ -107,18 +108,13 @@ html, body, .container-fluid {
     display: inline-block;
     border: 0;
     text-align: center;
-    width: 60%;
-}
-
-.nav-tabs>li {
-    width: 25%;
 }
 
 .nav-tabs>li>a {
     background: none;
 }
 
-.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus {
+.nav-tabs>li.active>a {
     color: #f9e4bf;
     background-color: black;
 }
@@ -134,7 +130,6 @@ html, body, .container-fluid {
 .reviewHeader {
     margin-top: 0px;
     margin-bottom: 1em;
-    margin-top: 0;
 }
 
 .social-networks {
@@ -142,10 +137,7 @@ html, body, .container-fluid {
 }
 
 .tab-pane {
-    background: linear-gradient(
-      rgba(0, 0, 0, 0.25), 
-      rgba(0, 0, 0, 0.25)
-    ),url(../img/noize_background_gold.png);
+    background: url(../img/noize_background_gold.png);
 }
 
 .carousel-control.left, .carousel-control.right {
@@ -154,7 +146,7 @@ html, body, .container-fluid {
 
 .attributes {
     color: #f9e4bf;
-    font-family: 'Armata', sans-serif;
+    font-family: 'Forum', cursive;
 }
 .price {
     font-size: 25px;
@@ -162,10 +154,6 @@ html, body, .container-fluid {
 
 #buttonDiv {
     text-align: center;
-}
-
-#infoAddress {
-    margin-top: 0;
 }
 
 #map {
