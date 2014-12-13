@@ -1,4 +1,4 @@
-
+@import url(http://fonts.googleapis.com/css?family=Armata|Raleway:600);
 @import url(http://fonts.googleapis.com/css?family=Oxygen:400,300);
 @import url(http://fonts.googleapis.com/css?family=Raleway:700,400);
 
@@ -70,7 +70,7 @@ html, body, .container-fluid {
     padding: 10px;
     margin-bottom: 0.5em;
     border: 1px solid #CCC;
-    background-color: #EEE;
+    background-color: #340000;
     border-radius: 4px;
     overflow:hidden;
 }
@@ -126,6 +126,14 @@ html, body, .container-fluid {
 
 .carousel-control.left, .carousel-control.right {
     background-color: black;
+}
+
+.attributes {
+    color: #f9e4bf;
+    font-family: 'Armata', sans-serif;
+}
+.price {
+    font-size: 25px;
 }
 
 #buttonDiv {
