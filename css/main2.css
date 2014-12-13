@@ -1,58 +1,5 @@
-
-div.cateringkategorie {
-	display:inline-block;
-	width:25%;
-	height:150px;
-	margin:10px;
-	background-color: rgba(129,1,0,0.7);
-	opacity:0.9;
-}
-
-div.cateringbild {
-	height:80%;
-	margin:5px;
-	background-image:url(http://consumerrecipe.conagrafoods.com/uploadedImages/img_5185_2277.JPEG)
-}
-
-.wpdevbk label {
-	color:#ddd!important;
-	font-family: Officina_bold!important;
-	margin-bottom:0px!important;
-}
-
-div.cateringkategorie:hover {
-	opacity:1;
-}
-
-div.cateringkategorie a:hover {
-	text-decoration:none;
-	color: #222;
-}
-
-.booking_form .control-group,
-.wpdevbk button.btn {
-   display:none!important;
-}
-    
-
-div.bk_calendar_frame {
-	width:100%!important;
-}
-
-
-
-
-@font-face {
-    font-family: 'Officina_bold';
-    src: url('font/officinaserifstd-bold-webfont.eot');
-    src: url('font/officinaserifstd-bold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('font/officinaserifstd-bold-webfont.woff') format('woff'),
-         url('font/officinaserifstd-bold-webfont.ttf') format('truetype'),
-         url('font/officinaserifstd-bold-webfont.svg#itc_officina_serif_std_bookBd') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
+@import url(http://fonts.googleapis.com/css?family=Oxygen:400,300);
+@import url(http://fonts.googleapis.com/css?family=Raleway:700,400);
 
 a.navi.schrift {
 	font-family:Officina_bold;
@@ -72,6 +19,7 @@ body {
 	color:#f9e4bf;	
 	font-family:Verdana, Arial, Helvetica, sans-serif;
 	font-size:12px;
+	
 	}
 
 p {
@@ -113,12 +61,6 @@ a:focus {
 	outline:none;
 }
 
-strong {font-weight:bold;}
-strong.invers {
-	background-color: #f9e4bf;
-	color: #5b3000;
-	font-size:12px;
-	}
 ul {
 	padding-left:0;
 	list-style-type:none;
@@ -177,28 +119,6 @@ ul {
 	margin-top:-130px;
 	}
 
-#navigation {
-	position:absolute;
-	float:left;
-	width:228px;
-	height:300px;
-	margin-top:-120px;
-	}
-
-	
-.navi {margin-top:14px;}
-.navi-home {margin-top:1px;}
-.navi-menu {margin-top:8px;}
-		
-.alignleft {
-	float:left;
-	margin:3px 12px 3px 0;
-	}
-	
-.alignright {
-	float:right;
-	margin:3px 0px 3px 12px;
-	}
 
 #teaser {
 	position:absolute;
@@ -264,207 +184,101 @@ textarea {
 	cursor:pointer;
 	}
 
-#rss-icon {
-	float:right; 
-	margin:9px 31px 0 0;
-	}
-#impressum-icon {
-	float:right; 
-	margin:28px 31px 0 0;
-	}
-#kontakt-icon {
-	float:right; 
-	margin:8px 18px 0 0;
-	}
-#impressum-icon img, #rss-icon img, #kontakt-icon img {margin-left:5px;}
 
-#contact-form {
-	background:url(images/form_bg.png) no-repeat;
-	margin:5px 10px;
-	padding:71px 0 0 106px;
-	height:399px;
-	}
-
-#wpsf_contact_name, #wpsf_contact_email, #wpsf_contact_subject, #wpsf_contact_message{
-	background:none;
-	border: none;
-	width:220px;
-	padding:3px;
-	font-family:Verdana, Arial, Helvetica, sans-serif;
-	font-size:12px;
-	font-style:normal;
-	line-height:30px;
-	color:#200000;
-	background:none;
-	}
-	
-#wpsf_contact_email {margin-top: 10px;}
-#wpsf_contact_subject {margin-top: 10px;}
-#wpsf_contact_message {
-	margin-top:12px;
-	height:180px;
-	}
-#contact-form-submit {
-	background:none;
-	border:none;
-	width:80px;
-	height:21px;
-	margin:21px 0 0 70px;
-	cursor:pointer;
-	}
-#content p {
-	
-}
-
-/*
--------------------------
-DAILYS + SPEISEKARTE
--------------------------
-*/
-.content-container{width:370px;}
-.daily-navi{margin:20px 0 5px;}
-.daily-navi img{margin:0 2px;}
-.roterkasten-oben{
-	background:url(images/tapas_bg_oben.png) no-repeat;
-	width:370px;
-	height:53px;
-	position:relative;
-	}
-.roterkasten-mitte{
-	background:url(images/tapas_bg_mitte.png) repeat-y;
-	position:relative;
-	width:370px;
-	min-height:35px;
-	}
-.roterkasten-mitte-content{
-	float:right;
-	margin-top:-42px;
-	position:relative;
-	width:370px;
-	z-index:1;
-	}
-.roterkasten-mitte-content h3{margin-left:17px;}
-.roterkasten-mitte-content p{margin-left:17px;}
-.roterkasten-mitte-content .preis{margin:-6px 17px 0;}
-.roterkasten-unten{
-	float:left;
-	margin:-41px 0 30px;
-	background:url(images/tapas_bg_unten.png) no-repeat;
-	width:370px;
-	height:43px;
-	position:relative;
-	}
-.preis {
-	text-align:right;
-	font-weight:bold;
-	margin:0 12px 30px;
-	}
-.preistabelle {
-	text-align:right;
-	font-weight:bold;
-	}
-.content-container h2 {margin:10px 10px 0;}
-
-.content-container p {
-	line-height:16px;
-	margin:5px 12px;
-	}
-/*
------------------------------
-eventcalendar
------------------------------
-*/
-table.ec3_schedule {
-	background-color: #680000;
-	border-collapse:collapse;
-	margin:0.5ex 1ex 0 12px;
-	border:solid 1px #680000;
-	}
-table.ec3_schedule td {
-	padding:0 0.5ex 0 0.5ex;
-	color:#F9E4BF;
-	font-size:10px;
-	}
-.kalender-mo, .kalender-di, .kalender-mi, .kalender-do, .kalender-fr, .kalender-sa, .kalender-so {
-	color:#900000;
-	width:112px;
-	height:140px;
-	margin:0 12px;
-	float:left;
-	} 
-.kalender-mo {background-image:url(images/kalender/mo.png);}
-.kalender-di {background-image:url(images/kalender/di.png);}
-.kalender-mi {background-image:url(images/kalender/mi.png);}
-.kalender-do {background-image:url(images/kalender/do.png);}
-.kalender-fr {background-image:url(images/kalender/fr.png);}
-.kalender-sa {background-image:url(images/kalender/sa.png);}
-.kalender-so {background-image:url(images/kalender/so.png);}
-
-.kalender-mo p {margin: 0px;}
-.kalender-di p {margin: 0px;}
-.kalender-mi p {margin: 0px;}
-.kalender-do p {margin: 0px;}
-.kalender-fr p {margin: 0px;}
-.kalender-sa p {margin: 0px;}
-.kalender-so p {margin: 0px;}
-
-
-.kalender-tag{
-	position:relative;
-	text-align:center;
-	padding:53px 0 0;
-	margin:0 0 0 -5px;
-	font-size:60px;
-	}                                 
-.kalender-monat {
-	position:relative;
-	text-align:center;
-	padding: 1px;
-	margin:-6px 0 0;
-	}
-.event {padding-top:14px;}
-
-
-.beachclub {
-		position: absolute;
-		right: 200px;
-		z-index: 10000;
-		top: 0px;
-		height: 140px;
-		width: 240px;
-		display: block;
-		background: url(images/nuevo_beachclub-240x140.png);
-		margin: 0 auto;
-		text-indent: -9999px;
-}
 
 .carousel-inner {
 	background-image: url(../img/content.jpg);
 	background-repeat: repeat-y;
 	background-position: center;
-	background-size: 954px auto;
+	background-size: 757px auto;
 }
 
-.jobs {
-	display: block;
-	position: absolute;
-	left: 0px;
-	top: 0px;
-	width: 320px;
-	height: 110px;
 
-	z-index: 999;
-	background: url(images/jobs.png) no-repeat center center;
-	text-indent: -999px;
-}
 header {
-	margin-left: 30%;
-	margin-right: 30%;
+	margin-left: 10%;
+	margin-right: 10%;
+	padding: 1em;
 	background-image: url(../img/content.jpg);
 	background-position: center;
-	background-size: 954px auto;
-}	
+	background-size: cover;
+}
+
+ /*original style sheet
+*/
+
+
+
+.sort-ui, .filter-ui {
+    margin-bottom: 1em;
+}
+
+.dishes {
+    margin: 0;
+    padding: 0;
+}
+
+.dish {
+    list-style: none;
+    padding: 10px;
+    margin-bottom: 0.5em;
+    border: 1px solid #CCC;
+    background-image: ../img/content.jpg;
+    border-radius: 4px;
+    overflow:hidden;
+}
+
+.dish img {
+    float: left;
+    max-width: 150px;
+    border-radius: 5px;
+}
+
+.dish .attributes {
+    padding-left: 170px;
+}
+
+.dish .name,
+.dish .title,
+.dish p {
+    margin-top: 0;
+    margin-bottom: 0.25em;
+}
+
+.dish .title {
+    font-size: 150%;
+}
+
+.dish .category {
+    font-size: 125%;
+}
+
+.filter-ui {
+    margin-top: 10px;
+}
+
+.sort-ui {
+    width: 250px;
+}
+
+.ratingBtns {
+    float: right;
+}
+
+.reviewHeader {
+    margin-bottom: 1em;
+}
+
+
+#buttonDiv {
+    text-align: center;
+}
+
+#map {
+    height: 500px;
+}
+*/
+
 /*
 WP-Stats
-*/
+
 img#wpstats{display:none}
