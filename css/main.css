@@ -31,7 +31,7 @@ h1 {
 
 header {
     text-align: center;
-    background:url(../img/content.jpg) no-repeat scroll center;
+    background: url(../img/content.jpg);
     background-size : 100%;
 }
 
@@ -108,13 +108,18 @@ html, body, .container-fluid {
     display: inline-block;
     border: 0;
     text-align: center;
+    width: 60%;
+}
+
+.nav-tabs>li {
+    width: 25%;
 }
 
 .nav-tabs>li>a {
     background: none;
 }
 
-.nav-tabs>li.active>a {
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus {
     color: #f9e4bf;
     background-color: black;
 }
@@ -133,6 +138,7 @@ html, body, .container-fluid {
 
 .reviewHeader {
     margin-bottom: 1em;
+    margin-top: 0;
 }
 
 .social-networks {
@@ -140,7 +146,10 @@ html, body, .container-fluid {
 }
 
 .tab-pane {
-    background: url(../img/noize_background_gold.png);
+    background: linear-gradient(
+      rgba(0, 0, 0, 0.25), 
+      rgba(0, 0, 0, 0.25)
+    ),url(../img/noize_background_gold.png);
 }
 
 .carousel-control.left, .carousel-control.right {
@@ -157,6 +166,10 @@ html, body, .container-fluid {
 
 #buttonDiv {
     text-align: center;
+}
+
+#infoAddress {
+    margin-top: 0;
 }
 
 #map {
