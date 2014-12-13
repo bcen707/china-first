@@ -91,24 +91,22 @@ angular.module('ReviewApp', ['ui.bootstrap'])
 		}
 
 		$scope.incrimentScore = function(change, reviewId, score) {
-			if((score != 0) || (change != -1)) {
-				$scope.incriment = {
-					"score": {
-						"__op": "Increment",
-						"amount": change
-					}
-				};
-				$http.put(reviewUrl + "/" + reviewId, $scope.incriment)
-					.success(function(responseData) {
+			$scope.incriment = {
+				"score": {
+					"__op": "Increment",
+					"amount": change
+				}
+			};
+			$http.put(reviewUrl + "/" + reviewId, $scope.incriment)
+				.success(function(responseData) {
 
-					})
-					.error(function(err) {
-						alert(err);
-					})
-					.finally(function() {
+				})
+				.error(function(err) {
+					alert(err);
+				})
+				.finally(function() {
 
-					});
-			}
+				});
 		}
 
 		$scope.negativeTest = function(score, reviewId) {

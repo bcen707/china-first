@@ -4,7 +4,7 @@
 	<title>Welcome to China First</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 	<link rel="icon" type="image/png" href="./img/chinese_noodles.png">
-	<link rel="stylesheet" href="css/main2.css">
+	<link rel="stylesheet" href="css/main.css">
 	<meta charset="UTF-8">
 	       
 
@@ -111,7 +111,7 @@
 						<span>Sort By:</span>
 						<div class="btn-group">
 							<button type="button" class="btn btn-default" ng-click="order='name'" ng-class="{active: isSortedBy('name')}">Alphabetical</button>
-							<button type="button" class="btn btn-default" ng-click="order='category'" ng-class="{active: isSortedBy('Category')}">Category</button>
+							<button type="button" class="btn btn-default" ng-click="order='category'" ng-class="{active: isSortedBy('category')}">Category</button>
 							<button type="button" class="btn btn-default" ng-click="order='price'" ng-class="{active: isSortedBy('price')}">Price</button>
 
 						</div>	
@@ -186,7 +186,7 @@
                 <h2 class="reviewHeader">Reviews</h2>
                 <div class="singleReview" ng-repeat="review in reviews | orderBy:'-score' | limitTo: 5">
                     <div class="ratingBtns">
-                        <span class="reviewRating">Review Score: {{negativeTest(review.score, review.objectId)}}</span>
+                        <span class="reviewRating">Review Score: {{review.score}}</span>
                         <btn class="btn btn-success" ng-click="incrimentScore(1, review.objectId, review.score)">[ + ]</btn>
                         <btn class="btn btn-warning" ng-click="incrimentScore(-1, review.objectId, review.score)">[ - ]</btn>
                     </div>
@@ -257,9 +257,6 @@
 
 	<!-- link to menu items -->
 	<script src="js/menu.js"></script>
-
-	<!-- link to menu review js -->
-	<script type="text/javascript" src="./js/reviewApp.js"></script>
 
 	<!-- link to google maps api and key -->
 	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDbZs-3ZutkFegVRuzG522cEd6ZJ3RWWNA"></script>
