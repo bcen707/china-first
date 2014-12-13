@@ -104,8 +104,23 @@ html, body, .container-fluid {
     margin-top: 10px;
 }
 
-.nav-tabs>li>1 {
-    background-color: white;
+.nav {
+    display: inline-block;
+    border: 0;
+    text-align: center;
+}
+
+.nav-tabs>li>a {
+    background: none;
+}
+
+.nav-tabs>li.active>a {
+    color: #f9e4bf;
+    background-color: black;
+}
+
+.nav-tabs>li>a:hover, {
+    background: green;
 }
 
 .sort-ui {
@@ -122,6 +137,10 @@ html, body, .container-fluid {
 
 .social-networks {
     text-align: right;
+}
+
+.tab-pane {
+    background: url(../img/noize_background_gold.png);
 }
 
 .carousel-control.left, .carousel-control.right {
