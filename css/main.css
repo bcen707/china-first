@@ -2,17 +2,14 @@
 @import url(http://fonts.googleapis.com/css?family=Oxygen:400,300);
 @import url(http://fonts.googleapis.com/css?family=Raleway:700,400);
 
+a, header {
+    color: #f9e4bf;
+}
+
 body {
     font-family: 'Oxygen', 'Helvetica Neue', 'Helvetica', sans-serif;
     font-weight: 300;
-    background: rgb(168,0,2); /* Old browsers */
-    background: -moz-linear-gradient(left,  rgba(168,0,2,1) 0%, rgba(168,0,2,1) 5%, rgba(255,196,124,1) 10%, rgba(255,255,255,1) 11%, rgba(255,255,255,1) 72%, rgba(255,255,255,1) 89%, rgba(255,196,124,1) 90%, rgba(255,196,124,1) 90%, rgba(168,0,2,1) 95%, rgba(168,0,2,1) 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(168,0,2,1)), color-stop(5%,rgba(168,0,2,1)), color-stop(10%,rgba(255,196,124,1)), color-stop(11%,rgba(255,255,255,1)), color-stop(72%,rgba(255,255,255,1)), color-stop(89%,rgba(255,255,255,1)), color-stop(90%,rgba(255,196,124,1)), color-stop(90%,rgba(255,196,124,1)), color-stop(95%,rgba(168,0,2,1)), color-stop(100%,rgba(168,0,2,1))); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(left,  rgba(168,0,2,1) 0%,rgba(168,0,2,1) 5%,rgba(255,196,124,1) 10%,rgba(255,255,255,1) 11%,rgba(255,255,255,1) 72%,rgba(255,255,255,1) 89%,rgba(255,196,124,1) 90%,rgba(255,196,124,1) 90%,rgba(168,0,2,1) 95%,rgba(168,0,2,1) 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(left,  rgba(168,0,2,1) 0%,rgba(168,0,2,1) 5%,rgba(255,196,124,1) 10%,rgba(255,255,255,1) 11%,rgba(255,255,255,1) 72%,rgba(255,255,255,1) 89%,rgba(255,196,124,1) 90%,rgba(255,196,124,1) 90%,rgba(168,0,2,1) 95%,rgba(168,0,2,1) 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(left,  rgba(168,0,2,1) 0%,rgba(168,0,2,1) 5%,rgba(255,196,124,1) 10%,rgba(255,255,255,1) 11%,rgba(255,255,255,1) 72%,rgba(255,255,255,1) 89%,rgba(255,196,124,1) 90%,rgba(255,196,124,1) 90%,rgba(168,0,2,1) 95%,rgba(168,0,2,1) 100%); /* IE10+ */
-    background: linear-gradient(to right,  rgba(168,0,2,1) 0%,rgba(168,0,2,1) 5%,rgba(255,196,124,1) 10%,rgba(255,255,255,1) 11%,rgba(255,255,255,1) 72%,rgba(255,255,255,1) 89%,rgba(255,196,124,1) 90%,rgba(255,196,124,1) 90%,rgba(168,0,2,1) 95%,rgba(168,0,2,1) 100%); /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a80002', endColorstr='#a80002',GradientType=1 ); /* IE6-9 */
+    background-color: #340000;
 }
 
 h1 {
@@ -20,12 +17,13 @@ h1 {
     font-size: 5em;
     font-weight: 700;
     text-align: left;
+    padding-left: 1em;
 }
 
 header {
     text-align: center;
-    margin-top: 5px;
-
+    background:url(../img/content.jpg) no-repeat scroll center;
+    background-size : 100%;
 }
 
 html, body, .container-fluid {
@@ -50,6 +48,7 @@ html, body, .container-fluid {
     border-radius: 7px;
     border-top: none;
     border-bottom: none;
+    padding: 0;
 }
 
 .sort-ui, .filter-ui {
@@ -98,6 +97,10 @@ html, body, .container-fluid {
 
 .filter-ui {
     margin-top: 10px;
+}
+
+.nav-tabs>li>1 {
+    background-color: white;
 }
 
 .sort-ui {

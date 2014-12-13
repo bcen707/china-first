@@ -48,8 +48,6 @@
 		  <div class="tab-content">
 
 			<div role="tabpanel" class="tab-pane active" id="home">
-				
-				<!-- Image Carousel here, will revisit, some issues with overriding scripts-->
 
 
 				<div ng-controller="FoodCarousel">
@@ -160,7 +158,6 @@
                     <p class="body">{{review.body}}</p>
                     <hr />
                     <p class="rating">Star Rating: {{review.rating}} / 5</p>
-                    <img src="img/ajax-spinner-sm.gif" alt="loading animation" ng-if="deleting"/>
                     <btn class="btn btn-danger" ng-click="deleteReview(review.objectId)">[ Delete ]</btn>
                 </div>
 
